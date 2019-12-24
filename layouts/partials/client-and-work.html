@@ -1,0 +1,73 @@
+{{ if .Site.Data.homepage.client_and_work.enable }}
+<section id="portfolio" class="section section--border-bottom pb-0">
+  <div class="container">
+    <h2 class="rad-animation-group rad-fade-down">
+      {{ .Site.Data.homepage.client_and_work.title }}
+    </h2>
+    <div class="row row--padded rad-animation-group">
+      <div class="col-12">
+        <div class="clients">
+          {{ range .Site.Data.homepage.client_and_work.clients }}
+          <div class="clients__item">
+            <a href="https://radity.com">
+              <img
+                class="lozad img-responsive rad-fade-in"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="{{ .logo.x }}"
+                data-srcset="{{ .logo.x }} 1x, {{ .logo._2x }} 2x"
+                alt="{{ .alt }}"
+              />
+            </a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ range $index, $element := .Site.Data.homepage.client_and_work.works }}
+    <div
+      class="row row--padded rad-animation-group {{ if .is_even }}flex-column-reverse flex-md-row{{ end }}"
+    >
+      {{ if .is_even }}
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3 class="rad-fade-down">{{ .title }}</h3>
+        <p class="lead rad-fade-down">
+          {{ .description }}
+        </p>
+        <a href="{{ .button.URL }}" class="btn btn-primary rad-fade-down"
+          >{{ .button.btnText }}<i class="{{ .button.icon }}"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive rad-fade-in {{ cond (eq ( mod $index 4) 0) "img-clip-left-backward" "img-clip-left-forward" }}'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="{{ .image.x }}"
+          data-srcset="{{ .image.x }} 1x, {{ .image._2x }} 2x"
+          alt="{{ .title }}"
+        />
+      </div>
+      {{ else }}
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive rad-fade-in {{ cond (eq ( mod $index 4) 1)  "img-clip-right-backward" "img-clip-right-forward" }}'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="{{ .image.x }}"
+          data-srcset="{{ .image.x }} 1x, {{ .image._2x }} 2x"
+          alt="{{ .title }}"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3 class="rad-fade-down">{{ .title }}</h3>
+        <p class="lead rad-fade-down">
+          {{ .description }}
+        </p>
+        <a href="{{ .button.URL }}" class="btn btn-primary rad-fade-down"
+          >{{ .button.btnText }}<i class="{{ .button.icon }}"></i
+        ></a>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

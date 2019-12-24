@@ -1,0 +1,198 @@
+# header
+header:
+  title : "Hello, I’m Andreas."
+  subtitle: "Front-End Developer"
+  description: "When I first mention this to most people, they really don’t get it, so here is a simple formula for keeping your moods upbeat."
+  logo:
+    x: "images/logo/logo.png"
+    2x: "images/logo/logo@2x.png"
+    3x: "images/logo/logo@3x.png"
+  image:
+    x: "images/header/header.png"
+    2x: "images/header/header@2x.png"
+    3x: "images/header/header@3x.png"
+
+  button:
+    icon: "ti-contact"
+    btnText: "Contact"
+    URL: "#"
+
+  socialLinks:
+
+    - icon : "ti-instagram"
+      URL : "#"
+
+    - icon : "ti-facebook"
+      URL : "#"
+
+    - icon : "ti-youtube"
+      URL : "#"
+
+    - icon : "ti-twitter"
+      URL : "#"
+
+    - icon : "ti-dribbble"
+      URL : "#"
+
+    - icon : "ti-linkedin"
+      URL : "#"
+
+    - icon : "ti-behance"
+      URL : "#"
+
+    - icon : "ti-codepen"
+      URL : "#"
+
+    - icon : "ti-github"
+      URL : "#"
+
+# about
+about:
+  enable : true
+  title: "Who am I?"
+  content : "I am back, after a few days of vacationing with family. Weather was awesome, the beach was full of nasty jelly-fish, yuk! All-in-all, life has been good. I hope life has been as good for all of you. <br /> My area of focus lies in designing web and mobile products, user research as well as leading of design & front-end teams. I enjoy designing and coding the UI as much as talking with users to iterate and improve the experiences that reach business goals."
+  button:
+    icon: "ti-about"
+    btnText: "About Me"
+    URL: "https://linkedin.com/andreas"
+
+# education
+education:
+  enable : true
+  items:
+    - title : "University of Waterloo"
+      year : "2012-2017"
+      academy : "Bachelor of Applied Science (BASc), Electrical Engineering"
+
+    - title : "Sir John A Macdonald CI"
+      year : "2009-2012"
+      academy : "High School Diploma, Sciences, Math, Computer & Business Studies"
+
+
+# experience
+experience:
+  enable : true
+  content: "Over 15+ years of experience working with companies from all over the world. I design & develop digital products to help businesses and improve people's lives."
+  button:
+    icon: "ti-linkedin"
+    btnText: "Linkedin"
+    URL: "https://linkedin.com/andreas"
+  button2:
+    icon: "ti-download"
+    btnText: "Download My Resume"
+    URL: "#"
+
+  items:
+    - title : "System Engineer"
+      company : "Cyberse"
+      duration : "Feb 2012 - Sep 2019"
+
+    - title : "Sr. Front-End Developer"
+      company : "Textic"
+      duration : "Apr 2010 - Jan 2012"
+
+    - title : "System Engineer"
+      company : "Cyberse"
+      duration : "Jun 2007 - Mar 2010"
+
+
+# Clients & Works
+clients_and_works:
+  client_enable : true
+  clients:
+    - logo:
+        x: "images/clients/asgardia.jpg"
+        2x: "images/clients/asgardia@2x.jpg"
+        3x: "images/clients/asgardia@3x.jpg"
+
+    - logo:
+        x: "images/clients/earth-2.jpg"
+        2x: "images/clients/earth-2@2x.jpg"
+        3x: "images/clients/earth-2@3x.jpg"
+
+    - logo:
+        x: "images/clients/goldline.jpg"
+        2x: "images/clients/goldline@2x.jpg"
+        3x: "images/clients/goldline@3x.jpg"
+
+    - logo:
+        x: "images/clients/kanba.jpg"
+        2x: "images/clients/kanba@2x.jpg"
+        3x: "images/clients/kanba@3x.jpg"
+
+    - logo:
+        x: "images/clients/zoo-tv.jpg"
+        2x: "images/clients/zoo-tv@2x.jpg"
+        3x: "images/clients/zoo-tv@3x.jpg"
+
+    - logo:
+        x: "images/clients/ztos.jpg"
+        2x: "images/clients/ztos@2x.jpg"
+        3x: "images/clients/ztos@3x.jpg"
+
+  work_enable : true
+  works:
+    - item:
+        title: "Radity Finance - UI Kit"
+        content: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
+        button:
+          icon: "ti-arrow"
+          btnText: "Case Study"
+          URL: "#"
+        image:
+          x: "images/works/radity-finance.png"
+          2x: "images/works/radity-finance@2x.png"
+          3x: "images/works/radity-finance@3x.png"
+
+    - item:
+        title: "Swiss Fintech Website"
+        content: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
+        button:
+          icon: "ti-arrow"
+          btnText: "Case Study"
+          URL: "#"
+        image:
+          x: "images/works/swiss-fintech.png"
+          2x: "images/works/swiss-fintech@2x.png"
+          3x: "images/works/swiss-fintech@3x.png"
+
+    - item:
+        title: "Robo Advisor"
+        content: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
+        button:
+          icon: "ti-arrow"
+          btnText: "Case Study"
+          URL: "#"
+        image:
+          x: "images/works/robo-advisor.png"
+          2x: "images/works/robo-advisor@2x.png"
+          3x: "images/works/robo-advisor@3x.png"
+
+
+# testimonial
+testimonial:
+  enable : true
+  item:
+    - name : "Daniel Jordan"
+      position : "Phonet, CEO"
+      content : "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
+      image :
+        x: "images/testimonials/daniel-jordan.png"
+        2x: "images/testimonials/daniel-jordan@2xpng"
+        3x: "images/testimonials/daniel-jordan@3x.png"
+
+    - name : "Jonathan Peters"
+      position : "Textic, CEO"
+      content : "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
+      image :
+        x: "images/testimonials/jonathon-peters.png"
+        2x: "images/testimonials/jonathon-peters@2xpng"
+        3x: "images/testimonials/jonathon-peters@3x.png"
+
+    - name : "Antonio Willis"
+      position : "Cyberse, CEO"
+      content : "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
+      image :
+        x: "images/testimonials/antonio-willis.png"
+        2x: "images/testimonials/antonio-willis@2xpng"
+        3x: "images/testimonials/antonio-willis@3x.png"

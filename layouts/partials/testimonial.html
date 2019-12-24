@@ -1,0 +1,28 @@
+{{ if .Site.Data.homepage.testimonial.enable }}
+<section class="section rad-animation-group section--border-bottom">
+    <div class="container">
+        <h2 class="rad-fade-down">{{ .Site.Data.homepage.testimonial.title }}</h2>
+        <div class="row row--padded mb-0">
+            {{ range .Site.Data.homepage.testimonial.items }}
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <i class="icon-quote rad-fade-down"></i>
+                <p class="rad-fade-down">
+                    {{ .content }}
+                </p>
+                <div class="testimonial__author rad-fade-down">
+                    <img class="lozad testimonial__author-image rad-fade-in"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="{{ .image.x }}"
+                         data-srcset="{{ .image.x }} 1x, {{ .image._2x }} 2x"
+                         alt="{{ .name }}"/>
+                    <div class="testimonial__author-info">
+                        <h4>{{ .name }}</h4>
+                        <span>{{ .position }}</span>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
