@@ -3,7 +3,7 @@
 
 A free Hugo Theme by Radity: Modern, Fast, Fresh and of course responsive.
 
-<img src="https://raditycmswebsite-live-5f5ab2ec57ec4907b-b52c0bb.divio-media.net/filer_public/d8/d9/d8d9f150-dd16-45d6-9667-885f1131bac7/01_-_mainpage_exportable_copy_31x_1.png"  width="100%" alt="raditian-hugo-theme-by-radity">
+<img src="https://raditycmswebsite-live-5f5ab2ec57ec4907b-b52c0bb.divio-media.net/filer_public/73/76/7376fcbd-46ff-4e8b-85b6-e4f9175658ad/01_-_mainpage_exportable_copy_31x_2.png"  width="100%" alt="raditian-hugo-theme-by-radity">
 
 ## Download
 
