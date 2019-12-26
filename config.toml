@@ -1,4 +1,4 @@
-baseURL = "https://raditian.onrender.com"
+baseURL = "https://raditian-hugo.radity.com/"
 languageCode = "en-us"
 theme = "raditian"
 

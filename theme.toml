@@ -1,8 +1,8 @@
-name = "Radity Personal Website"
+name = "Raditian Personal Website by Radity"
 license = "MIT"
 licenselink = "https://github.com/radity/raditian-free-hugo-theme/blob/master/LICENSE"
 description = "A free Hugo Theme by Radity: Modern, Fast, Fresh and of course responsive."
-homepage = "https://raditian.onrender.com/"
+homepage = "https://raditian-hugo.radity.com//"
 tags = ['personal-website', 'fast', 'typography', 'fresh', 'modern', 'hugo-theme', 'hugo', 'bootstrap', 'responsive', 'clean', 'simple', 'creative', 'contact form', 'custom-design', 'minimalistic', 'portfolio', 'google tag manager', 'google analytics', 'customizable', 'flexbox', 'theme']
 features = ['responsive', 'bootstrap']
 min_version = "0.55"
