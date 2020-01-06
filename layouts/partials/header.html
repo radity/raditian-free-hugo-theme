@@ -7,8 +7,8 @@
         <span>{{ .Site.Params.logo.text2 }}</span>
         <!-- <img
           class="img-responsive"
-          src="./img/logo-dark.png"
-          srcset="./img/logo-dark.png 1x, ./img/logo-dark@2x.png 2x"
+          src="img/logo-dark.png"
+          srcset="img/logo-dark.png 1x, ./img/logo-dark@2x.png 2x"
           alt="Header Logo"
         /> -->
       </a>
@@ -39,12 +39,3 @@
     </nav>
   </div>
 </header>
-
-<!-- endinject -->
-
-<script>
-  const activePath = "/";
-  document
-    .querySelector(`.nav-link[href="${activePath}"]`)
-    .parentElement.classList.add("active");
-</script>
