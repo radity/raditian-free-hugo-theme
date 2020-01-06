@@ -5,10 +5,10 @@ showcase:
   subtitle: "Front-End Developer"
   description: "I work at <a target='_blank' href='https://radity.com/'>Radity</a>, a software development company in Switzerland. And I am a Raditian. You get the idea where theme name comes from. Keep cool, stay in touch. You can download this theme from <a target='_blank' href='https://github.com/radity/raditian-free-hugo-theme'>github</a>."
   image:
-    x: "/img/showcase/showcase.png"
-    _2x: "/img/showcase/showcase@2x.png"
+    x: "img/showcase/showcase.png"
+    _2x: "img/showcase/showcase@2x.png"
   imageMobile:
-    x: "/img/showcase/showcase-mobile.jpg"
+    x: "img/showcase/showcase-mobile.jpg"
 
   button:
     icon: "icon-mail-fill"
@@ -56,8 +56,8 @@ about:
     btnText: "About Me"
     URL: "https://www.linkedin.com/company/radity/"
   image:
-    x: "/img/who-am-i/user-picture.png"
-    _2x: "/img/who-am-i/user-picture@2x.png"
+    x: "img/who-am-i/user-picture.png"
+    _2x: "img/who-am-i/user-picture@2x.png"
 
 # education
 education:
@@ -108,33 +108,33 @@ client_and_work:
 
   clients:
     - logo:
-        x: "/img/clients/asgardia.png"
-        _2x: "/img/clients/asgardia@2x.png"
+        x: "img/clients/asgardia.png"
+        _2x: "img/clients/asgardia@2x.png"
       alt: "Asgardia"
 
     - logo:
-        x: "/img/clients/earth-2.png"
-        _2x: "/img/clients/earth-2@2x.png"
+        x: "img/clients/earth-2.png"
+        _2x: "img/clients/earth-2@2x.png"
       alt: "Earth 2.0"
 
     - logo:
-        x: "/img/clients/goldline.png"
-        _2x: "/img/clients/goldline@2x.png"
+        x: "img/clients/goldline.png"
+        _2x: "img/clients/goldline@2x.png"
       alt: "Goldline"
 
     - logo:
-        x: "/img/clients/kanba.png"
-        _2x: "/img/clients/kanba@2x.png"
+        x: "img/clients/kanba.png"
+        _2x: "img/clients/kanba@2x.png"
       alt: "Kanba"
 
     - logo:
-        x: "/img/clients/zoo-tv.png"
-        _2x: "/img/clients/zoo-tv@2x.png"
+        x: "img/clients/zoo-tv.png"
+        _2x: "img/clients/zoo-tv@2x.png"
       alt: "Zoo"
 
     - logo:
-        x: "/img/clients/ztos.png"
-        _2x: "/img/clients/ztos@2x.png"
+        x: "img/clients/ztos.png"
+        _2x: "img/clients/ztos@2x.png"
       alt: "Ztos"
 
   works:
@@ -145,8 +145,8 @@ client_and_work:
         btnText: "Case Study"
         URL: "#"
       image:
-        x: "/img/works/radity-finance.jpg"
-        _2x: "/img/works/radity-finance@2x.jpg"
+        x: "img/works/radity-finance.jpg"
+        _2x: "img/works/radity-finance@2x.jpg"
       is_even: true
 
     - title: "Swiss Fintech Website"
@@ -156,8 +156,8 @@ client_and_work:
         btnText: "Case Study"
         URL: "#"
       image:
-        x: "/img/works/swissfintech.jpg"
-        _2x: "/img/works/swissfintech@2x.jpg"
+        x: "img/works/swissfintech.jpg"
+        _2x: "img/works/swissfintech@2x.jpg"
       is_even: false
 
     - title: "Robo Advisor"
@@ -167,8 +167,8 @@ client_and_work:
         btnText: "Case Study"
         URL: "#"
       image:
-        x: "/img/works/robo-advisor.jpg"
-        _2x: "/img/works/robo-advisor@2x.jpg"
+        x: "img/works/robo-advisor.jpg"
+        _2x: "img/works/robo-advisor@2x.jpg"
       is_even: true
 
 
@@ -181,22 +181,22 @@ testimonial:
       position : "Phonet, CEO"
       content : "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
       image :
-        x: "/img/testimonials/daniel-jordan.jpg"
-        _2x: "/img/testimonials/daniel-jordan@2x.jpg"
+        x: "img/testimonials/daniel-jordan.jpg"
+        _2x: "img/testimonials/daniel-jordan@2x.jpg"
 
     - name : "Jonathan Peters"
       position : "Textic, CEO"
       content : "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
       image :
-        x: "/img/testimonials/jonathan-peters.jpg"
-        _2x: "/img/testimonials/jonathan-peters@2x.jpg"
+        x: "img/testimonials/jonathan-peters.jpg"
+        _2x: "img/testimonials/jonathan-peters@2x.jpg"
 
     - name : "Antonio Willis"
       position : "Cyberse, CEO"
       content : "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
       image :
-        x: "/img/testimonials/antonio-willis.jpg"
-        _2x: "/img/testimonials/antonio-willis@2x.jpg"
+        x: "img/testimonials/antonio-willis.jpg"
+        _2x: "img/testimonials/antonio-willis@2x.jpg"
 
 # contact
 contact:

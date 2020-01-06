@@ -7,19 +7,19 @@ theme = "raditian-free-hugo-theme"
 
   # CSS Plugins
   [[params.plugins.css]]
-  URL = "/css/main.css"
+  URL = "css/main.css"
   [[params.plugins.css]]
-  URL = "/css/rad-icons.css"
+  URL = "css/rad-icons.css"
   [[params.plugins.css]]
-  URL = "/css/custom.css"
+  URL = "css/custom.css"
 
   # JS Plugins
   [[params.plugins.js]]
-  URL = "/js/rad-animations.js"
+  URL = "js/rad-animations.js"
   [[params.plugins.js]]
-  URL = "/js/sticky-header.js"
+  URL = "js/sticky-header.js"
   [[params.plugins.js]]
-  URL = "/js/library/fontfaceobserver.js"
+  URL = "js/library/fontfaceobserver.js"
 
 
 # navigation
@@ -68,6 +68,6 @@ theme = "raditian-free-hugo-theme"
   [params.footer]
       copyright = "© Raditian. All rights reserved."
       [params.footer.radity_logo]
-        x = "/img/general/design-and-code-radity.png"
-        _2x = "/img/general/design-and-code-radity@2x.png"
+        x = "img/general/design-and-code-radity.png"
+        _2x = "img/general/design-and-code-radity@2x.png"
         alt = "Design & Code - Radity"
