@@ -1,13 +1,13 @@
 {{ if .Site.Data.homepage.education.enable }}
 <section class="section section--border-bottom rad-animation-group">
     <div class="container">
-        <div class="row">
+        <div class="row rad-fade-down">
             <div class="col-12">
-                <h2 class="rad-fade-down">{{ .Site.Data.homepage.education.title }}</h2>
+                <h2>{{ .Site.Data.homepage.education.title }}</h2>
                 <div class="row pt-2 pt-md-4">
                     {{ range .Site.Data.homepage.education.items }}
                     <div class="col-12 col-sm-6 mb-4 mb-sm-0">
-                        <div class="education rad-fade-down">
+                        <div class="education">
                             <div class="education__date">{{ .year }}</div>
                             <div class="education__title">{{ .university }}</div>
                             <div class="education__degree">

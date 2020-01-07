@@ -1,25 +1,25 @@
 {{ if .Site.Data.homepage.about.enable }}
 <section class="section rad-animation-group pb-0" id="about">
-  <div class="container">
+  <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
       <div class="about__profile-picture col-12 col-md-6">
         <img
-          class="lozad img-responsive rad-fade-in image-left-overflow"
+          class="lozad img-responsive image-left-overflow"
           src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-          data-src="{{ .Site.Data.homepage.about.image.x }}"
-          data-srcset="{{ .Site.Data.homepage.about.image.x }} 1x, {{ .Site.Data.homepage.about.image._2x }} 2x"
+          data-src="{{ .Site.Data.homepage.about.image.x | absURL }}"
+          data-srcset="{{ .Site.Data.homepage.about.image.x | absURL }} 1x, {{ .Site.Data.homepage.about.image._2x | absURL }} 2x"
           alt="Profile Picture"
         />
       </div>
       <div class="col-12 col-md-6 my-auto my-auto">
-        <h2 class="rad-fade-down">{{ .Site.Data.homepage.about.title }}</h2>
-        <p class="lead rad-fade-down">
+        <h2>{{ .Site.Data.homepage.about.title }}</h2>
+        <p class="lead">
           {{ .Site.Data.homepage.about.content | safeHTML }}
         </p>
         <a
-          href="{{ .Site.Data.homepage.about.button.URL }}"
+          href="{{ .Site.Data.homepage.about.button.URL | absURL }}"
           target="_blank"
-          class="btn btn-primary rad-fade-down"
+          class="btn btn-primary"
         >
           <i class="{{ .Site.Data.homepage.about.button.icon }}"></i>
           {{ .Site.Data.homepage.about.button.btnText }}
