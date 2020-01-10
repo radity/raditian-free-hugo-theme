@@ -43,6 +43,9 @@ showcase:
     - icon: "codepen"
       URL: "#"
 
+    - icon: "yelp"
+      URL: "https://www.yelp.com/"
+
 # about
 about:
   enable: true

@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'rad-icons';
-  src: url('../fonts/rad-icons.eot?62488884');
-  src: url('../fonts/rad-icons.eot?62488884#iefix') format('embedded-opentype'),
-       url('../fonts/rad-icons.woff2?62488884') format('woff2'),
-       url('../fonts/rad-icons.woff?62488884') format('woff'),
-       url('../fonts/rad-icons.ttf?62488884') format('truetype'),
-       url('../fonts/rad-icons.svg?62488884#rad-icons') format('svg');
+  src: url('../fonts/rad-icons.eot?32706191');
+  src: url('../fonts/rad-icons.eot?32706191#iefix') format('embedded-opentype'),
+       url('../fonts/rad-icons.woff2?32706191') format('woff2'),
+       url('../fonts/rad-icons.woff?32706191') format('woff'),
+       url('../fonts/rad-icons.ttf?32706191') format('truetype'),
+       url('../fonts/rad-icons.svg?32706191#rad-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'rad-icons';
-    src: url('../fonts/rad-icons.svg?62488884#rad-icons') format('svg');
+    src: url('../font/rad-icons.svg?32706191#rad-icons') format('svg');
   }
 }
 */
@@ -70,3 +70,4 @@
 .icon-facebook-line:before { content: '\e810'; } /* '' */
 .icon-github-line:before { content: '\e811'; } /* '' */
 .icon-linkedin-line:before { content: '\e812'; } /* '' */
+.icon-yelp-line:before { content: '\e82c'; } /* '' */
