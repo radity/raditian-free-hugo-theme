@@ -209,6 +209,7 @@ contact:
   enable: true
   title: "Contact"
   form:
+    method: "POST"
     action: "#"
     full_name: "Full Name"
     email: "Email Address"
