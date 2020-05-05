@@ -6,7 +6,7 @@
       src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
       data-src="{{ .Site.Data.homepage.showcase.image.x | absURL }}"
       data-srcset="{{ .Site.Data.homepage.showcase.image.x | absURL }} 1x, {{ .Site.Data.homepage.showcase.image._2x | absURL }} 2x"
-      alt="Showcase keyboard and mouse image"
+      alt="{{ .Site.Data.homepage.showcase.image.alt }}"
     />
   </div>
   <div class="container">
@@ -46,7 +46,7 @@
       class="lozad img-responsive"
       src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
       data-src="{{ .Site.Data.homepage.showcase.imageMobile.x | absURL }}"
-      alt="Showcase keyboard and mouse image"
+      alt="{{ .Site.Data.homepage.showcase.imageMobile.alt }}"
     />
   </div>
 </section>
