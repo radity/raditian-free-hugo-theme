@@ -1,3 +1,7 @@
+# homepage
+homepage:
+  head:
+    title: "Home | Raditian"
 # showcase
 showcase:
   enable: true
@@ -5,9 +9,11 @@ showcase:
   subtitle: "Front-End Developer"
   description: "I work at <a target='_blank' href='https://radity.com/'>Radity</a>, a software development company in Switzerland. And I am a Raditian. You get the idea where theme name comes from. Keep cool, stay in touch. You can download this theme from <a target='_blank' href='https://github.com/radity/raditian-free-hugo-theme'>github</a>."
   image:
+    alt: "Showcase keyboard and mouse image"
     x: "img/showcase/showcase.png"
     _2x: "img/showcase/showcase@2x.png"
   imageMobile:
+    alt: "Showcase keyboard and mouse image"
     x: "img/showcase/showcase-mobile.jpg"
 
   button:
@@ -209,6 +215,7 @@ contact:
   enable: true
   title: "Contact"
   form:
+    method: "POST"
     action: "#"
     full_name: "Full Name"
     email: "Email Address"

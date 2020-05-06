@@ -5,7 +5,7 @@
             <h2>{{ .Site.Data.homepage.contact.title }}</h2>
             <div class="row pt-2">
                 <div class="col-12 col-lg-7">
-                    <form action="{{ .Site.Data.homepage.contact.form.action }}">
+                    <form action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
                         <div class="row">
                             <div class="col-12 col-sm-6">
                                 <input type="text" name="" id="full_name"
