@@ -9,7 +9,7 @@
         <div class="clients">
           {{ range .Site.Data.homepage.client_and_work.clients }}
           <div class="clients__item">
-            <a href="https://radity.com">
+            <a target="_blank" href="{{ .URL | absURL }}">
               <img
                 class="lozad img-responsive"
                 src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="

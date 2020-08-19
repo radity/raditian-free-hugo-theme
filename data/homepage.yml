@@ -118,31 +118,37 @@ client_and_work:
         x: "img/clients/asgardia.png"
         _2x: "img/clients/asgardia@2x.png"
       alt: "Asgardia"
+      URL: "https://radity.com"
 
     - logo:
         x: "img/clients/earth-2.png"
         _2x: "img/clients/earth-2@2x.png"
       alt: "Earth 2.0"
+      URL: "https://radity.com"
 
     - logo:
         x: "img/clients/goldline.png"
         _2x: "img/clients/goldline@2x.png"
       alt: "Goldline"
+      URL: "https://radity.com"
 
     - logo:
         x: "img/clients/kanba.png"
         _2x: "img/clients/kanba@2x.png"
       alt: "Kanba"
+      URL: "https://radity.com"
 
     - logo:
         x: "img/clients/zoo-tv.png"
         _2x: "img/clients/zoo-tv@2x.png"
       alt: "Zoo"
+      URL: "https://radity.com"
 
     - logo:
         x: "img/clients/ztos.png"
         _2x: "img/clients/ztos@2x.png"
       alt: "Ztos"
+      URL: "https://radity.com"
 
   works:
     - title: "Radity Finance - UI Kit"
