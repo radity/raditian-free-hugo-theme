@@ -3,8 +3,8 @@
 <script>
   window.addEventListener("load", function() {
     var observer = window.lozad(".lozad", {
-      rootMargin: window.innerHeight / 2 + "px 0px",
-      threshold: 0.01
+      rootMargin: window.innerHeight / 1 + "0px 0px",
+      threshold: 0.1
     }); // lazy loads elements with default selector as '.lozad'
     observer.observe();
   });
