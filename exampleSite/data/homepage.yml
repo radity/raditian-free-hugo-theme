@@ -160,7 +160,6 @@ client_and_work:
       image:
         x: "img/works/radity-finance.jpg"
         _2x: "img/works/radity-finance@2x.jpg"
-      is_even: true
 
     - title: "Swiss Fintech Website"
       description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
@@ -171,7 +170,6 @@ client_and_work:
       image:
         x: "img/works/swissfintech.jpg"
         _2x: "img/works/swissfintech@2x.jpg"
-      is_even: false
 
     - title: "Robo Advisor"
       description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
@@ -182,7 +180,6 @@ client_and_work:
       image:
         x: "img/works/robo-advisor.jpg"
         _2x: "img/works/robo-advisor@2x.jpg"
-      is_even: true
 
 # testimonial
 testimonial:

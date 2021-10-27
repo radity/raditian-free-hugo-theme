@@ -25,9 +25,9 @@
     </div>
     {{ range $index, $element := .Site.Data.homepage.client_and_work.works }}
     <div
-      class="row row--padded rad-animation-group rad-fade-down {{ if .is_even }}flex-column-reverse flex-md-row{{ end }}"
+      class="row row--padded rad-animation-group rad-fade-down {{ if modBool $index 2 }}flex-column-reverse flex-md-row{{ end }}"
     >
-      {{ if .is_even }}
+      {{ if modBool $index 2 }}
       <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
         <h3>{{ .title }}</h3>
         <p class="lead">
