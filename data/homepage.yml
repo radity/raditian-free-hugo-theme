@@ -88,7 +88,7 @@ experience:
   description: "Over 15+ years of experience working with companies from all over the world. I design & develop digital products to help businesses and improve people's lives."
   button:
     icon: "icon-linkedin-fill"
-    btnText: "Linkedin"
+    btnText: "LinkedIn"
     URL: "https://www.linkedin.com/company/radity/"
   button2:
     icon: "icon-profile-fill"
