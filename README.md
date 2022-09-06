@@ -24,6 +24,9 @@ Demo: https://raditian-hugo.radity.com
     > hugo server -D
     The theme is alive on http://localhost:1313/ 
 
+## Other Themes
+[Free hugo themes](hugo-templates.netlify.app)
+
 ## License
 
 - Copyright 2020 Radity (https://radity.com/)
