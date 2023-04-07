@@ -3,19 +3,28 @@
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
       <div class="about__profile-picture col-12 col-md-6">
-        <img
-          class="lozad img-responsive image-left-overflow"
-          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-          data-src="{{ .Site.Data.homepage.about.image.x | absURL }}"
-          data-srcset="{{ .Site.Data.homepage.about.image.x | absURL }} 1x, {{ .Site.Data.homepage.about.image._2x | absURL }} 2x"
-          alt="Profile Picture"
-        />
+        {{ $img := resources.Get .Site.Data.homepage.about.image.x }}
+        {{ $img2x := resources.Get .Site.Data.homepage.about.image._2x }}      
+        {{ $imgWebp := $img.Resize (printf "%dx%d webp" $img.Height $img.Width) }}
+        {{ $img2xWebp := $img.Resize (printf "%dx%d webp" $img2x.Height $img2x.Width) }}
+        <picture>
+          <source srcset="{{ $imgWebp.RelPermalink }} 1x, {{ $img2xWebp.RelPermalink }} 2x" type="image/webp" />
+          <source srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x" type="image/webp">
+          <img
+            width="{{ $img.Width }}"
+            height="{{ $img.Height }}"
+            class="lozad img-responsive image-left-overflow"
+            src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+            srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
+            data-src="{{ $img.RelPermalink }}"
+            data-srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
+            alt="Profile Picture of Adrián Moreno (@zetxek), working side by side with a colleague: sitting on a desk, while looking at a screen"
+          />
+        </picture>
       </div>
       <div class="col-12 col-md-6 my-auto my-auto">
         <h2>{{ .Site.Data.homepage.about.title }}</h2>
-        <p class="lead">
-          {{ .Site.Data.homepage.about.content | safeHTML }}
-        </p>
+        {{ .Site.Data.homepage.about.content | safeHTML }}
         <a
           href="{{ .Site.Data.homepage.about.button.URL | absURL }}"
           target="_blank"

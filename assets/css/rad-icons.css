@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 @font-face {
   font-family: 'rad-icons';
   src: url('../fonts/rad-icons.eot?32706191');
@@ -8,18 +9,9 @@
        url('../fonts/rad-icons.svg?32706191#rad-icons') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'rad-icons';
-    src: url('../font/rad-icons.svg?32706191#rad-icons') format('svg');
-  }
-}
-*/
- 
+
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "rad-icons";
   font-style: normal;
@@ -71,3 +63,4 @@
 .icon-github-line:before { content: '\e811'; } /* '' */
 .icon-linkedin-line:before { content: '\e812'; } /* '' */
 .icon-yelp-line:before { content: '\e82c'; } /* '' */
+/* purgecss stop ignore */
