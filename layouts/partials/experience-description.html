@@ -1,0 +1,43 @@
+<div class="container-experience">
+  <div class="row">
+    <h2>{{ .Site.Data.homepage.experience.title }}</h2>
+    <p class="lead">{{ .Site.Data.homepage.experience.description }}</p>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <a
+        href="{{ .Site.Data.homepage.experience.button.URL | absURL }}"
+        class="btn btn-primary btn-block"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="{{ .Site.Data.homepage.experience.button.icon }}"></i>
+        {{ .Site.Data.homepage.experience.button.btnText }}
+        <i class="icon-arrow-right"></i
+      ></a>
+    </div>
+    <div class="col-12 col-lg-4">
+      <a
+        href="{{ .Site.Data.homepage.experience.button2.URL | absURL }}"
+        class="btn btn-frameless btn-block"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="{{ .Site.Data.homepage.experience.button2.icon }}"></i>
+        {{ .Site.Data.homepage.experience.button2.btnText }}
+      </a>
+    </div>
+    {{ if .Site.Data.homepage.experience.button3.btnText }}
+    <div class="col-12 col-lg-4">
+      <a
+        href="{{ .Site.Data.homepage.experience.button3.URL | absURL }}"
+        class="btn btn-frameless btn-block"
+        rel="noopener noreferrer"
+      >
+        <i class="{{ .Site.Data.homepage.experience.button3.icon }}"></i>
+        {{ .Site.Data.homepage.experience.button3.btnText }}
+      </a>
+    </div>
+    {{ end }}
+  </div>
+</div>

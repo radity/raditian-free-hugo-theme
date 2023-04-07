@@ -1,0 +1,46 @@
+<!-- inject:../components/baseHead/baseHeadStart.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head.html" . }} {{ partial "head_custom.html" . }}
+  </head>
+
+  <body>
+    {{ partial "header.html" . }} {{ partial "breadcrumb.html" . }}
+
+    <section
+      id="experience"
+      class="section section--border-bottom rad-animation-group"
+    >
+      <div class="container">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+          <div class="col-12 col-md-5 mt-5 mt-sm-0">
+            {{ range where .Site.RegularPages.ByDate.Reverse "Type" "experience" }}
+
+            <div class="experience">
+              <a href="{{.Permalink}}">
+                {{/* The context, ".", is now each one of the pages as it goes
+                through the loop */}}
+                <div class="experience__date">{{ .Params.duration }}</div>
+                <div class="experience__title">{{ .Params.title }}</div>
+                <div class="experience__company">
+                  {{ .Params.company }}.
+                  <span class="experience__location"
+                    >{{ .Params.location }}</span
+                  >
+                </div>
+              </a>
+            </div>
+            {{ end }}
+          </div>
+          <div class="col-12 col-md-7 mt-7 mt-sm-0">
+            {{ partial "experience-description.html" . }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{ partial "footer.html" . }} {{ partial "base-foot.html" . }}
+  </body>
+</html>
+<!-- endinject -->

@@ -1,17 +1,8 @@
 {{ if .Site.Data.homepage.showcase.enable }}
 <section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
-  <div class="rad-showcase__bg">
-    <img
-      class="lozad img-responsive"
-      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-      data-src="{{ .Site.Data.homepage.showcase.image.x | absURL }}"
-      data-srcset="{{ .Site.Data.homepage.showcase.image.x | absURL }} 1x, {{ .Site.Data.homepage.showcase.image._2x | absURL }} 2x"
-      alt="{{ .Site.Data.homepage.showcase.image.alt }}"
-    />
-  </div>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <h1 class="display-1">
           {{ .Site.Data.homepage.showcase.title }}
           <br />
@@ -23,31 +14,47 @@
           {{ .Site.Data.homepage.showcase.description | safeHTML }}
         </p>
         <a
-          href="{{ .Site.Data.homepage.showcase.button.URL | absURL }}"
+          href="{{ .Site.Data.homepage.showcase.button.URL }}"
           class="btn btn-primary"
         >
           <i class="{{ .Site.Data.homepage.showcase.button.icon }}"></i>
           {{ .Site.Data.homepage.showcase.button.btnText }}
         </a>
       </div>
+<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 profile-image">
+
+{{ $img := resources.Get .Site.Data.homepage.showcase.image.x }}
+  {{ $img2x := resources.Get .Site.Data.homepage.showcase.image._2x }}
+  {{ $imgWebp := $img.Resize (printf "%dx%d webp q75 Lanczos picture" $img.Height $img.Width) }}
+  {{ $img2xWebp := $img2x.Resize (printf "%dx%d webp q75 Lanczos picture" $img2x.Height $img2x.Width) }}
+
+  <picture>
+    <source srcset="{{ $imgWebp.RelPermalink }} 1x, {{ $img2xWebp.RelPermalink }} 2x" type="image/webp" />
+    <source srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x" type="image/webp">
+    <img
+      width="{{ $img.Width }}"
+      height="{{ $img.Height }}"
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
+      data-src="{{ $img.RelPermalink }}"
+      data-srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
+      alt="{{ .Site.Data.homepage.showcase.image.alt }}"
+    />
+  </picture>
+
+</div>
     </div>
     <div class="row platform-links">
       <div class="col-12">
         {{ range .Site.Data.homepage.showcase.socialLinks }}
-        <a href="{{ .URL | absURL }}" target="_blank"
+        <a href="{{ .URL | absURL }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .icon }}"
           ><i class="icon-{{ .icon }}-line"></i
         ></a>
         {{ end }}
       </div>
     </div>
   </div>
-  <div class="rad-showcase__bg rad-showcase__bg--mobile">
-    <img
-      class="lozad img-responsive"
-      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-      data-src="{{ .Site.Data.homepage.showcase.imageMobile.x | absURL }}"
-      alt="{{ .Site.Data.homepage.showcase.imageMobile.alt }}"
-    />
-  </div>
+  
 </section>
 {{ end }}

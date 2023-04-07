@@ -1,0 +1,28 @@
+<section id="breadcrumb-bar" class="breadcrumb-bar">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li class="breadcrum-item"><span><a href="{{ relURL "" }}">Home</a></span></li>
+            {{- $.Scratch.Set "url" "" -}}
+            {{- range (split .RelPermalink "/") -}}
+                {{- if (gt (len .) 0) -}}    
+                    {{- $.Scratch.Set "isPage" "false" -}}
+                    {{- $.Scratch.Add "url" (print "/" . ) -}}
+                    {{- if $.Site.GetPage (print . ".md") -}}
+                        {{- with $.Site.GetPage (print . ".md") -}}
+                            {{- if .IsPage -}}
+                                {{- $.Scratch.Set "isPage" "true" -}}
+                            {{- end -}}
+                        {{- end -}}
+                    {{- end -}}
+                    {{- if eq ($.Scratch.Get "isPage") "true" -}}
+                        {{- with $.Site.GetPage (print . ".md") -}}
+                            <li class="breadcrum-item current">{{ .Title }}</li>
+                        {{- end -}}
+                    {{- else -}}
+                        <li class="breadcrum-item"><span><a href="{{ $.Scratch.Get `url` }}">{{ humanize . }}</a></span></li>
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
+            </ul>
+        </div>
+</section>

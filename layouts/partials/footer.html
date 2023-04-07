@@ -2,28 +2,23 @@
   <div class="container">
     <div class="footer__left">
       <div class="footer__copy">
-        {{ .Site.Params.footer.copyright }}
+        {{ .Site.Params.footer.copyright | safeHTML }}
       </div>
     </div>
     <div class="footer__links">
       <ul class="navbar-nav ">
         <li class="nav-item">
-          <a class="nav-link" href="/">HOME</a>
+            <a class="nav-link" href="{{ .Site.BaseURL | absURL }}">🏠 HOME</a>
         </li>
         {{ range .Site.Menus.footer }}
         <li class="nav-item">
-          <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name | upper }}</a>
+          <a class="nav-link" href="{{ .URL | relURL }}">{{ .Name | upper }}</a>
         </li>
         {{ end }}
       </ul>
     </div>
     <div class="footer__right">
-      <a href="https://radity.com/"
-        ><img
-          src="{{ .Site.Params.footer.radity_logo.x | absURL }}"
-          srcset="{{ .Site.Params.footer.radity_logo.x | absURL }} 1x, {{ .Site.Params.footer.radity_logo._2x | absURL }} 2x"
-          alt="{{ .Site.Params.footer.radity_logo.alt }}"
-      /></a>
+      
     </div>
   </div>
 </footer>
