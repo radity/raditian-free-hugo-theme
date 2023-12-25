@@ -1,30 +1,42 @@
 {{ if .Site.Data.homepage.experience.enable }}
-<section id="experience" class="section section--border-bottom rad-animation-group">
+<section id="experience" class="section-experience section section--border-bottom rad-animation-group">
     <div class="container">
         <div class="row flex-column-reverse flex-md-row rad-fade-down">
             <div class="col-12 cold-md-12 col-sm-6 mt-5 mt-sm-0">
                 {{ $xp := (where .Site.RegularPages.ByDate.Reverse "Type" "experience") }}
                 {{ $xpCount := len $xp }}
+                {{/* in the homepage we limit to the homepageExperienceCount param (6 by default) in the inner page (experience) we display the all */}}
+                {{ $totalCount := .Site.Params.homepageExperienceCount }}
+                
+                {{ if not .IsHome }}
+                {{ $totalCount = len $xp }}
+                {{ end }}
                 {{ range first 6 $xp }}
                 <div class="experience">
-                    <div class="experience__date">{{ .Params.duration }}</div>
-                    <div class="experience__title">{{ .Params.jobTitle }}</div>
-                    <div class="experience__company">{{ .Params.company }}. <span class="experience__location">{{ .Params.location }}</span></div>
+                    <a href="{{.Permalink}}">
+                        {{/* The context, ".", is now each one of the pages as it goes
+                        through the loop */}}
+                        <div class="experience__date">{{ .Params.duration }}</div>
+                        <div class="experience__title">{{ .Params.jobTitle }}</div>
+                        <div class="experience__company">{{ .Params.company }}. <span class="experience__location">{{
+                                .Params.location }}</span></div>
+                    </a>
                 </div>
                 {{ end }}
-                {{ if gt $xpCount 6 }}
-                    <div class="all-experience-container">
-                        {{ $xpExtra := sub $xpCount 6 }}
-                        <em>And {{ $xpExtra }} more</em><br/>
-                        <a href="{{ absURL "experience" }} " title="See additional {{ $xpExtra }} experience items" class="btn btn-primary btn-all-experience">
-                            <i class="{{ .Site.Data.homepage.experience.button3.icon }}"></i>
-                            {{ .Site.Data.homepage.experience.button3.btnText }}
-                        </a>
-                    </div>
+                {{ if gt $xpCount $totalCount }}
+                <div class="all-experience-container">
+                    {{ $xpExtra := sub $xpCount $totalCount }}
+                    <em>And {{ $xpExtra }} more</em><br />
+                    <a href="{{ absURL "experience" }} " title=" See additional {{ $xpExtra }} experience items"
+                        class="btn btn-primary btn-all-experience">
+                        <i class="{{ .Site.Data.homepage.experience.button3.icon }}"></i>
+                        {{ .Site.Data.homepage.experience.button3.btnText }}
+                    </a>
+                </div>
                 {{ end }}
             </div>
             <div class="col-12 col-md-6">
-	            {{ partial "experience-description.html" . }}
+                {{ partial "experience-description.html" . }}
             </div>
         </div>
     </div>
