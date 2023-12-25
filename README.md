@@ -2,16 +2,16 @@
 ###### Adritian Hugo Theme for Personal Websites
 
 This free Hugo theme is a fork of [Raditian Theme](https://github.com/radity/raditian-free-hugo-theme) - a great Hugo theme created by Radity.
-
 It's based on bootstrap (so it's responsive), and the main changes have been upgrades on the web performance and accessibility of the template.
 
-Changes:
+Changes on this version:
 
 - removal of jQuery
 - upgrade of bootstrap from v4 to v5
 - assets pipeline support
 - some basic i18n featurees
 - added more pages/templates
+- upgrade loading performance (100 score in lighthouse)
 
 You can see it live in https://www.adrianmoreno.info (my personal website)
 
@@ -21,7 +21,7 @@ You can see it live in https://www.adrianmoreno.info (my personal website)
 ## Download
 
 - Clone the repo: `git clone https://github.com/zetxek/adritian-free-hugo-theme.git`.
-- [Download from Github](https://github.com/zetxek/raditian-free-hugo-theme/archive/master.zip).
+- [Download from Github](https://github.com/zetxek/adritian-free-hugo-theme/archive/master.zip).
 
 ## Installation
 
@@ -41,6 +41,6 @@ You can see it live in https://www.adrianmoreno.info (my personal website)
 - Copyright 2020 Radity (https://radity.com/), 2022 Adrián Moreno Peña (https://www.adrianmoreno.info)
 - Licensed under MIT (https://github.com/zetxek/adritian-free-hugo-theme/blob/master/LICENSE)
 
-## Support
+## Getting help
 
-If you have any problem please do not hesitate to [contact us](https://radity.com/en/contact/).
+The project is offered "as is", and it's a hobby project. Support is given whenever life allows - you can create an issue [create an issue]([url](https://github.com/zetxek/adritian-free-hugo-theme/issues)https://github.com/zetxek/adritian-free-hugo-theme/issues) so anyone else could also help, or the author.
