@@ -1,6 +1,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+{{ with .Site.Params.googleTagManagerID }}
 <!-- Google Tag Manager -->
 <script>
     (function (w, d, s, l, i) {
@@ -13,14 +14,13 @@
             j = d.createElement(s),
             dl = l != 'dataLayer' ? '&l=' + l : '';
         j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id={{ .Site.Params.googleTagManagerID }}' + i + dl;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', '{{ .Site.Params.googleTagManagerID }}');
+    })(window, document, 'script', 'dataLayer', '{{ . }}');
 </script>
 <!-- End Google Tag Manager -->
-<!-- endinject -->
-<title>{{ .Site.Data.homepage.head.title }}</title>
+{{ end }}
+<title>{{ if .IsHome }}{{ $d := hugo.Data.homepage }}{{ or $d.head.title $d.homepage.head.title .Site.Title }}{{ else }}{{ .Title }}{{ with .Site.Title }} | {{ . }}{{ end }}{{ end }}</title>
 <style>
     /* Fade In animation triggering after font load or 3s timeout */
     .rad-fade-in {

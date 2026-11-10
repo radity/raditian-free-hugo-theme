@@ -1,4 +1,4 @@
-{{ if .Site.Data.homepage.about.enable }}
+{{ if hugo.Data.homepage.about.enable }}
 <section class="section rad-animation-group pb-0" id="about">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
@@ -6,23 +6,24 @@
         <img
           class="lozad img-responsive image-left-overflow"
           src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-          data-src="{{ .Site.Data.homepage.about.image.x | absURL }}"
-          data-srcset="{{ .Site.Data.homepage.about.image.x | absURL }} 1x, {{ .Site.Data.homepage.about.image._2x | absURL }} 2x"
-          alt="Profile Picture"
+          data-src="{{ hugo.Data.homepage.about.image.x | absURL }}"
+          data-srcset="{{ hugo.Data.homepage.about.image.x | absURL }} 1x, {{ hugo.Data.homepage.about.image._2x | absURL }} 2x"
+          alt="{{ hugo.Data.homepage.about.image.alt | default "Profile Picture" }}"
         />
       </div>
-      <div class="col-12 col-md-6 my-auto my-auto">
-        <h2>{{ .Site.Data.homepage.about.title }}</h2>
-        <p class="lead">
-          {{ .Site.Data.homepage.about.content | safeHTML }}
-        </p>
+      <div class="col-12 col-md-6 my-auto">
+        <h2>{{ hugo.Data.homepage.about.title }}</h2>
+        <div class="lead">
+          {{ hugo.Data.homepage.about.content | safeHTML }}
+        </div>
         <a
-          href="{{ .Site.Data.homepage.about.button.URL | absURL }}"
+          href="{{ hugo.Data.homepage.about.button.URL | absURL }}"
           target="_blank"
+          rel="noopener noreferrer"
           class="btn btn-primary"
         >
-          <i class="{{ .Site.Data.homepage.about.button.icon }}"></i>
-          {{ .Site.Data.homepage.about.button.btnText }}
+          <i class="{{ hugo.Data.homepage.about.button.icon }}"></i>
+          {{ hugo.Data.homepage.about.button.btnText }}
         </a>
       </div>
     </div>

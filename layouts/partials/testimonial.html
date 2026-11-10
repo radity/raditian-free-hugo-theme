@@ -1,9 +1,9 @@
-{{ if .Site.Data.homepage.testimonial.enable }}
+{{ if hugo.Data.homepage.testimonial.enable }}
 <section class="section rad-animation-group section--border-bottom">
     <div class="container">
-        <h2 class="rad-fade-down">{{ .Site.Data.homepage.testimonial.title }}</h2>
+        <h2 class="rad-fade-down">{{ hugo.Data.homepage.testimonial.title }}</h2>
         <div class="row row--padded mb-0 rad-fade-down">
-            {{ range .Site.Data.homepage.testimonial.items }}
+            {{ range hugo.Data.homepage.testimonial.items }}
             <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
                 <i class="icon-quote"></i>
                 <p>

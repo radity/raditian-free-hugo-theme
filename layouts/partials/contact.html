@@ -1,44 +1,48 @@
-{{ if .Site.Data.homepage.contact.enable }}
+{{ if hugo.Data.homepage.contact.enable }}
 <section id="contact" class="section section--contact pt-0">
     <div class="container">
         <div class="contact">
-            <h2>{{ .Site.Data.homepage.contact.title }}</h2>
+            <h2>{{ hugo.Data.homepage.contact.title }}</h2>
             <div class="row pt-2">
                 <div class="col-12 col-lg-7">
-                    <form action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
+                    {{/* Display-only form: it has no action and never sends data anywhere. */}}
+                    <form onsubmit="return false;" novalidate>
                         <div class="row">
                             <div class="col-12 col-sm-6">
-                                <input type="text" name="" id="full_name"
-                                       placeholder="{{ .Site.Data.homepage.contact.form.full_name }}"/>
+                                <input type="text" name="full_name" id="full_name" autocomplete="name"
+                                       placeholder="{{ hugo.Data.homepage.contact.form.full_name }}"
+                                       aria-label="{{ hugo.Data.homepage.contact.form.full_name }}"/>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="text" name="" id="email"
-                                       placeholder="{{ .Site.Data.homepage.contact.form.email }}"/>
+                                <input type="email" name="email" id="email" autocomplete="email"
+                                       placeholder="{{ hugo.Data.homepage.contact.form.email }}"
+                                       aria-label="{{ hugo.Data.homepage.contact.form.email }}"/>
                             </div>
                         </div>
                         <div class="row pt-4">
                             <div class="col-12">
-                                <textarea name="" id="message"
-                                          cols="30" rows="3" placeholder="{{ .Site.Data.homepage.contact.form.message }}"></textarea>
+                                <textarea name="message" id="message"
+                                          cols="30" rows="3" placeholder="{{ hugo.Data.homepage.contact.form.message }}"
+                                          aria-label="{{ hugo.Data.homepage.contact.form.message }}"></textarea>
                             </div>
                         </div>
                         <div class="row pt-4">
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="{{ .Site.Data.homepage.contact.button.icon }}"></i>
-                                    {{ .Site.Data.homepage.contact.button.btnText }}
+                                <button type="button" class="btn btn-primary">
+                                    <i class="{{ hugo.Data.homepage.contact.button.icon }}"></i>
+                                    {{ hugo.Data.homepage.contact.button.btnText }}
                                 </button>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="col-12 col-lg-5 contact__info">
-                    <h4>{{ .Site.Data.homepage.contact.phone.title }}</h4>
-                    <span>{{ .Site.Data.homepage.contact.phone.number }}</span>
-                    <h4>{{ .Site.Data.homepage.contact.email.title }}</h4>
-                    <span>{{ .Site.Data.homepage.contact.email.email | safeHTML }}</span>
-                    <h4>{{ .Site.Data.homepage.contact.address.title }}</h4>
-                    <span>{{ .Site.Data.homepage.contact.address.address | safeHTML }}</span>
+                    <h4>{{ hugo.Data.homepage.contact.phone.title }}</h4>
+                    <span>{{ hugo.Data.homepage.contact.phone.number }}</span>
+                    <h4>{{ hugo.Data.homepage.contact.email.title }}</h4>
+                    <span>{{ hugo.Data.homepage.contact.email.email | safeHTML }}</span>
+                    <h4>{{ hugo.Data.homepage.contact.address.title }}</h4>
+                    <span>{{ hugo.Data.homepage.contact.address.address | safeHTML }}</span>
                 </div>
             </div>
         </div>

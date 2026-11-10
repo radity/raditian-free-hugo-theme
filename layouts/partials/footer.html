@@ -8,7 +8,7 @@
     <div class="footer__links">
       <ul class="navbar-nav ">
         <li class="nav-item">
-          <a class="nav-link" href="/">HOME</a>
+          <a class="nav-link" href="{{ .Site.BaseURL | absURL }}">HOME</a>
         </li>
         {{ range .Site.Menus.footer }}
         <li class="nav-item">
@@ -18,12 +18,15 @@
       </ul>
     </div>
     <div class="footer__right">
-      <a href="https://radity.com/"
-        ><img
-          src="{{ .Site.Params.footer.radity_logo.x | absURL }}"
-          srcset="{{ .Site.Params.footer.radity_logo.x | absURL }} 1x, {{ .Site.Params.footer.radity_logo._2x | absURL }} 2x"
-          alt="{{ .Site.Params.footer.radity_logo.alt }}"
-      /></a>
+      {{ with .Site.Params.footer.radity_logo }}
+      {{ if .x }}
+      <img
+        src="{{ .x | absURL }}"
+        {{ with ._2x }}srcset="{{ $.Site.Params.footer.radity_logo.x | absURL }} 1x, {{ . | absURL }} 2x"{{ end }}
+        alt="{{ .alt }}"
+      />
+      {{ end }}
+      {{ end }}
     </div>
   </div>
 </footer>

@@ -1,6 +1,9 @@
 baseURL = "https://raditian-hugo.radity.com/"
-languageCode = "en-us"
+locale = "en-US"
 theme = "raditian-free-hugo-theme"
+
+# The theme has no tag or category pages, so skip generating empty ones.
+disableKinds = ["taxonomy", "term"]
 
 # Plugins
 [params.plugins]
@@ -61,7 +64,8 @@ theme = "raditian-free-hugo-theme"
 
   sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
 
-  googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+  # Google Tag Manager container ID, for example "GTM-XXXXXXX". Leave empty to load no tracking script.
+  googleTagManagerID = ""
 
   [params.logo]
     text1 = "Andreas"

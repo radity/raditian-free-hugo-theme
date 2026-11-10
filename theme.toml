@@ -5,7 +5,7 @@ description = "A free Hugo Theme by Radity: Modern, Fast, Fresh and of course re
 homepage = "https://raditian-hugo.radity.com/"
 tags = ['personal-website', 'personal', 'portfolio', 'single-page', 'one-page', 'fast', 'typography', 'customizable', 'mobile', 'resume', 'fresh', 'modern', 'flexbox', 'hugo-theme', 'hugo', 'bootstrap', 'responsive', 'clean', 'simple', 'creative', 'contact form', 'light', 'white', 'custom-design', 'minimal', 'minimalistic', 'minimalist', 'portfolio', 'google tag manager', 'google analytics', 'customizable', 'flexbox', 'starter', 'theme']
 features = ['responsive', 'bootstrap']
-min_version = "0.59.0"
+min_version = "0.158.0"
 
 [author]
   name = "Radity"

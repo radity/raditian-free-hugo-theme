@@ -3,7 +3,7 @@ showcase:
   enable: true
   title: "Hello, I’m Andreas."
   subtitle: "Front-End Developer"
-  description: "I work at <a target='_blank' href='https://radity.com/'>Radity</a>, a software development company in Switzerland. And I am a Raditian. You get the idea where theme name comes from. Keep cool, stay in touch. You can download this theme from <a target='_blank' href='https://github.com/radity/raditian-free-hugo-theme'>github</a>."
+  description: "I work at <a target='_blank' rel='noopener noreferrer' href='https://radity.com/'>Radity</a>, a software development company in Switzerland. And I am a Raditian. You get the idea where theme name comes from. Keep cool, stay in touch. You can download this theme from <a target='_blank' rel='noopener noreferrer' href='https://github.com/radity/raditian-free-hugo-theme'>github</a>."
   image:
     x: "img/showcase/showcase.png"
     _2x: "img/showcase/showcase@2x.png"
@@ -13,32 +13,32 @@ showcase:
   button:
     icon: "icon-mail-fill"
     btnText: "Contact"
-    URL: "https://radity.com/en/contact/"
+    URL: "#contact"
 
   socialLinks:
     - icon: "linkedin"
-      URL: "https://www.linkedin.com/company/radity/"
+      URL: "https://www.linkedin.com/"
 
     - icon: "github"
-      URL: "https://github.com/radity"
+      URL: "https://github.com/"
 
     - icon: "twitter"
-      URL: "https://twitter.com/radity"
+      URL: "https://twitter.com/"
 
     - icon: "dribbble"
-      URL: "https://dribbble.com/radity"
+      URL: "https://dribbble.com/"
 
     - icon: "behance"
-      URL: "https://www.behance.net/radity-digital"
+      URL: "https://www.behance.net/"
 
     - icon: "youtube"
-      URL: "https://www.youtube.com/channel/UCojEc6SPO-W1_CoeHhK9-Zw"
+      URL: "https://www.youtube.com/"
 
     - icon: "instagram"
-      URL: "https://www.instagram.com/teamradity/"
+      URL: "https://www.instagram.com/"
 
     - icon: "facebook"
-      URL: "https://www.facebook.com/raditycom/"
+      URL: "https://www.facebook.com/"
 
     - icon: "codepen"
       URL: "#"
@@ -63,7 +63,7 @@ about:
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"
-    URL: "https://www.linkedin.com/company/radity/"
+    URL: "https://www.linkedin.com/"
   image:
     x: "img/who-am-i/user-picture.png"
     _2x: "img/who-am-i/user-picture@2x.png"
@@ -89,7 +89,7 @@ experience:
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
-    URL: "https://www.linkedin.com/company/radity/"
+    URL: "https://www.linkedin.com/"
   button2:
     icon: "icon-profile-fill"
     btnText: "Download My Resume"
@@ -209,19 +209,18 @@ contact:
   enable: true
   title: "Contact"
   form:
-    action: "#"
     full_name: "Full Name"
     email: "Email Address"
     message: "Type Your Message Here"
   phone:
     title: "Phone Number"
-    number: "+41 (44) 505 10 99"
+    number: "+1 (555) 010-0100"
   email:
     title: "Email"
-    email: '<a href="mailto:team@radity.com">team@radity.com</a>'
+    email: '<a href="mailto:hello@example.com">hello@example.com</a>'
   address:
     title: "Address"
-    address: "Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich"
+    address: "Example Company<br />Example Street 1, 1000 Example City"
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"
@@ -230,6 +229,4 @@ contact:
 newsletter:
   enable: true
   title: "Newsletter subscription"
-  success_message: "Successfully subscribed"
-  error_message: "Error while subscribing."
   note: "We'll never share your email with anyone else."
